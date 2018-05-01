@@ -1,5 +1,5 @@
 'use strict'
-
+console.log(app)
 page('/'
   , (ctx, next) => app.Book.fetchAll(() => app.bookView.initIndexPage(ctx, next))
   , (ctx, next) => app.adminView.verify(ctx, next)
